@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <script src="javas.js"></script>
+</head>
+<body class="container center_div">
+
+<div class="container ">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"  href="#">Personal Details</a>
+    </div>
+  </div>
+</nav><br><br><br><br>
+  <form id ="detail_form" class="form-horizontal" action="insert.php" method ="post" name="detail_form">
+  <div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Name : </label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="text1" name="text_name" required>
+      </div>
+    </div>
+   
+	
+	
+   <div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Age:</label>
+      <div class="col-sm-8">          
+        <input type="number" class="form-control" id="text2"  name="text_age" min ="1" max = "100" required>
+      </div>
+    </div>
+	
+	<div class="form-group">
+  <label class="control-label col-sm-3" for="radios">Gender</label>
+  <div class="col-sm-8"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="text_sex" id="radios-0" value="Male" checked="checked">
+      Male
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="text_sex" id="radios-1" value="Female">
+      Female
+    </label>
+  </div>
+</div>
+
+    <div class="form-group">
+    <label  class = "control-label col-sm-3" for="exampleFormControlSelect1">Marital Status:</label>
+	<div class="col-sm-8">
+    <select class="form-control" id="exampleFormControlSelect1" name = "text_status" >
+      <option>Married</option>
+		<option>Unmarried</option>
+    </select>
+  </div>
+  </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Mobile Number:</label>
+      <div class="col-sm-8">          
+        <input type="number" class="form-control" id="text4"  name="text_number" required>
+      </div>
+    </div>
+	
+	 <div class="form-group">
+    <label  class = "control-label col-sm-3" for="exampleFormControlSelect1">Country:</label>
+	<div class="col-sm-8">
+    <select class="form-control" id="exampleFormControlSelect1" name ="text_country" >
+      <option>Afganistan</option>
+		<option>Australia</option>
+		<option>Belgium</option>
+		<option>Canada</option>
+		<option>Finland</option>
+		<option>Germany</option>
+		<option>Holand</option>
+		<option>India</option>
+		<option>Japan</option>
+		<option>Korea</option>
+		<option>Malaysia</option>
+		<option>Netherland</option>
+		<option>Pakistan</option>
+		<option>Sri Lanka</option>
+		<option>USA</option>
+		<option>UK</option>n>5</option>
+    </select>
+  </div>
+  </div>
+  
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">State:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="pwd" name="text_state" required>
+      </div>
+    </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Locality/Area:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="pwd" name="text_area" required>
+      </div>
+    </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Pincode:</label>
+      <div class="col-sm-8">          
+        <input type="number" class="form-control" id="text8" name="text_code" pattern="[0-9]{6}"required>
+      </div>
+    </div>
+	
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Annual income:</label>
+      <div class="col-sm-8">          
+        <input type="number" class="form-control" id="pwd" placeholder="In Numbers" name="text_income">Enter '0' if Unemployed.
+      </div>
+    </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Percantage :</label>
+      <div class="col-sm-8">          
+        <input type="number" class="form-control" id="text10" name="text_marks">
+      </div>
+    </div>
+	
+	
+	 <div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Job:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="pwd" name="text_job">
+      </div>
+    </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Health Check:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="pwd" placeholder="Any On Going Disease" name="text_health">
+      </div>
+    </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Prental Details:</label>
+      <div class="col-sm-8">          
+        <input type="text" class="form-control" id="pwd" placeholder="Parent/Guardian name" name="text_parent" required>
+      </div>
+    </div>
+	
+	<div class = "row">
+	 <button type="button"  class="btn btn-default active center-block" onClick="checkout()" >Submit</button>
+	 </div>
+	
+  </form>
+</div>
+
+</body>
+</html>
